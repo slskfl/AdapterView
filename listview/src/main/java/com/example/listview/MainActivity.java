@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         listView1=findViewById(R.id.listView1);
-        adapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1);
+        adapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,nation);
         listView1.setAdapter(adapter);
         listView1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
